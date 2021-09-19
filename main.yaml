@@ -1,0 +1,7 @@
+- hosts: localhost
+  become: yes
+
+  tasks:
+   - name: deploy app on K8s cluster using ansible.
+     command: sh kubectl apply -f deployment.yaml 
+	 
